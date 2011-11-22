@@ -1,11 +1,11 @@
-# revision 23733
+# revision 24623
 # category Package
 # catalog-ctan /macros/latex/contrib/titlesec
-# catalog-date 2011-08-28 17:37:31 +0200
+# catalog-date 2011-11-17 12:51:35 +0100
 # catalog-license lppl
-# catalog-version 2.9.1
+# catalog-version 2.9.2
 Name:		texlive-titlesec
-Version:	2.9.1
+Version:	2.9.2
 Release:	1
 Summary:	Select alternative section titles
 Group:		Publishing
@@ -52,6 +52,7 @@ may assign headers/footers to individual floats, too.
 %{_texmfdistdir}/tex/latex/titlesec/leftmargin.tss
 %{_texmfdistdir}/tex/latex/titlesec/margin.tss
 %{_texmfdistdir}/tex/latex/titlesec/rightmargin.tss
+%{_texmfdistdir}/tex/latex/titlesec/titleps.sty
 %{_texmfdistdir}/tex/latex/titlesec/titlesec.sty
 %{_texmfdistdir}/tex/latex/titlesec/titletoc.sty
 %{_texmfdistdir}/tex/latex/titlesec/ttlkeys.def
