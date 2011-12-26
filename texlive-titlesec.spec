@@ -1,11 +1,11 @@
-# revision 24623
+# revision 24852
 # category Package
 # catalog-ctan /macros/latex/contrib/titlesec
-# catalog-date 2011-11-17 12:51:35 +0100
+# catalog-date 2011-12-15 15:36:45 +0100
 # catalog-license lppl
-# catalog-version 2.9.2
+# catalog-version 2.10.0
 Name:		texlive-titlesec
-Version:	2.9.2
+Version:	2.10.0
 Release:	1
 Summary:	Select alternative section titles
 Group:		Publishing
@@ -17,8 +17,6 @@ BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
 
 %description
 A package providing an interface to sectioning commands for
@@ -29,19 +27,19 @@ to change the page styles when there are floats in a page. You
 may assign headers/footers to individual floats, too.
 
 %pre
-    %_texmf_mktexlsr_pre
+    %{_sbindir}/texlive.post
 
 %post
-    %_texmf_mktexlsr_post
+    %{_sbindir}/texlive.post
 
 %preun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_pre
+	%{_sbindir}/texlive.post
     fi
 
 %postun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_post
+	%{_sbindir}/texlive.post
     fi
 
 #-----------------------------------------------------------------------
@@ -60,6 +58,8 @@ may assign headers/footers to individual floats, too.
 %{_texmfdistdir}/tex/latex/titlesec/wrap.tss
 %doc %{_texmfdistdir}/doc/latex/titlesec/CHANGES
 %doc %{_texmfdistdir}/doc/latex/titlesec/README
+%doc %{_texmfdistdir}/doc/latex/titlesec/titleps.pdf
+%doc %{_texmfdistdir}/doc/latex/titlesec/titleps.tex
 %doc %{_texmfdistdir}/doc/latex/titlesec/titlesec.pdf
 %doc %{_texmfdistdir}/doc/latex/titlesec/titlesec.tex
 %doc %{_tlpkgobjdir}/*.tlpobj
