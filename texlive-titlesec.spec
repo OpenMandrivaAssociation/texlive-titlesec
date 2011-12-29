@@ -26,16 +26,8 @@ providing simple one-step page styles. Also includes a package
 to change the page styles when there are floats in a page. You
 may assign headers/footers to individual floats, too.
 
-%pre
-    %{_sbindir}/texlive.post
-
 %post
     %{_sbindir}/texlive.post
-
-%preun
-    if [ $1 -eq 0 ]; then
-	%{_sbindir}/texlive.post
-    fi
 
 %postun
     if [ $1 -eq 0 ]; then
@@ -62,7 +54,6 @@ may assign headers/footers to individual floats, too.
 %doc %{_texmfdistdir}/doc/latex/titlesec/titleps.tex
 %doc %{_texmfdistdir}/doc/latex/titlesec/titlesec.pdf
 %doc %{_texmfdistdir}/doc/latex/titlesec/titlesec.tex
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -73,5 +64,3 @@ may assign headers/footers to individual floats, too.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
