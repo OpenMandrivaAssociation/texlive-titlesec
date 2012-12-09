@@ -64,3 +64,24 @@ may assign headers/footers to individual floats, too.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Thu Jan 05 2012 Paulo Andrade <pcpa@mandriva.com.br> 2.10.0-2
++ Revision: 756924
+- Rebuild to reduce used resources
+
+* Mon Dec 26 2011 Paulo Andrade <pcpa@mandriva.com.br> 2.10.0-1
++ Revision: 745334
+- texlive-titlesec
+
+* Tue Nov 22 2011 Paulo Andrade <pcpa@mandriva.com.br> 2.9.2-1
++ Revision: 732613
+- texlive-titlesec
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 2.9.1-1
++ Revision: 719758
+- texlive-titlesec
+- texlive-titlesec
+- texlive-titlesec
+
