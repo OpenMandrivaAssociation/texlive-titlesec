@@ -6,7 +6,7 @@
 # catalog-version 2.10.0
 Name:		texlive-titlesec
 Version:	2.10.0
-Release:	9
+Release:	10
 Summary:	Select alternative section titles
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/titlesec
