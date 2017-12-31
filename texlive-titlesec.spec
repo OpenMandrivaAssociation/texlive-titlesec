@@ -5,8 +5,8 @@
 # catalog-license lppl
 # catalog-version 2.10.0
 Name:		texlive-titlesec
-Version:	2.10.0
-Release:	10
+Version:	2.10.2
+Release:	1
 Summary:	Select alternative section titles
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/titlesec
