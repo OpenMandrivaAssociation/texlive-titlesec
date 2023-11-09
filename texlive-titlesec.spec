@@ -1,5 +1,5 @@
 Name:		texlive-titlesec
-Version:	68573
+Version:	68677
 Release:	1
 Summary:	Select alternative section titles
 Group:		Publishing
