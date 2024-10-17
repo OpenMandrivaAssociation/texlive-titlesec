@@ -3,7 +3,7 @@ Version:	68677
 Release:	1
 Summary:	Select alternative section titles
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/titlesec
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/titlesec
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/titlesec.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/titlesec.doc.r%{version}.tar.xz
